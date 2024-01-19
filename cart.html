@@ -503,12 +503,17 @@
 	            <p>Выберите дату доставки</p>
 	        </div>
 	        <div class="vModal-userFormWrapper__body">
-	        	<div class="cart-checkout-datetime">
+	        	<div class="cart-checkout-datetime cards">
 	        		<div class="b-checkout_date_calendar js-datePicker">
 	        			<input type="hidden" name="date" data-required="true" data-required-notice="Необходимо выбрать дату">	        			
 	        		</div>
 	        	</div>
 	        </div>
+            <div class="vModal-userFormWrapper__button">
+                <button class="transition-btn">
+                      Далее
+                </button>
+            </div>
 	        <div class="loadingWrap"><div class="loading-dots">
 	            <div class="loading-dots--dot"></div>
 	            <div class="loading-dots--dot"></div>
@@ -524,25 +529,34 @@
 	            <p>Выберите время доставки</p>
 	        </div>
 	        <div class="vModal-userFormWrapper__body">
-	        	<div class="cart-checkout-datetime__time-inner">
-	        		<div class="express_delivery_wrap" data-mark_date="no">
-	        			<label class="express_delivery_input">
+	        	<div class="cart-checkout-datetime__time-inner cart-checkout-datetime__time-inner-calendar_periods">
+	        		<div class="express_delivery_wrap express_delivery_wrap-cards" data-mark_date="no">
+	        			<label class="express_delivery_input express_delivery_input-cards">
 	        				<input class="js-pure express_delivery" type="radio" name="time" value="express доставка" data-required="true"  />
 	        				<span>Доставка в течение часа</span>
 	    				</label>
 	                    <span class="express_delivery_notice_2">
-	                    	*Доступно только для физических лиц <br/>
-							**Стоимость услуги <span class="express_delivery_price">300 Р</span>
+	                    	*Доступно только для физических лиц
 						</span>
 					</div>
 	        		
 	        		<input type="hidden" name="time_id" value="">
-	        		<label><input class="js-pure" type="radio" name="time" value="18-23" data-period="18-23" data-id="97" data-required="true"><span>18-23</span></label>
-	        		<label><input class="js-pure" type="radio" name="time" value="18-21" data-period="18-21" data-id="95" data-required="true"><span>18-21</span></label>
-	        		<label><input class="js-pure" type="radio" name="time" value="21-23" data-period="21-23" data-id="105" data-required="true"><span>21-23</span></label>
+                    <div class="time-inner__row">
+                        <label><input class="js-pure" type="radio" name="time" value="18-23" data-period="18-23" data-id="97" data-required="true"><span>18-23</span></label>
+                        <label><input class="js-pure" type="radio" name="time" value="18-21" data-period="18-21" data-id="95" data-required="true"><span>18-21</span></label>
+                    </div>
+                    <div class="time-inner__row">
+                        <label><input class="js-pure" type="radio" name="time" value="21-23" data-period="21-23" data-id="105" data-required="true"><span>21-23</span></label>
 	        		<label><input class="js-pure" type="radio" name="time" value="22-23:59" data-period="22-23:59" data-id="600" data-required="true"><span>22-23:59</span></label>
+                    </div>
+	        		
 	    		</div>
 	        </div>
+            <div class="vModal-userFormWrapper__button">
+                <button class="transition-btn">
+                      Далее
+                </button>
+            </div>
 	        <div class="loadingWrap"><div class="loading-dots">
 	            <div class="loading-dots--dot"></div>
 	            <div class="loading-dots--dot"></div>
@@ -553,19 +567,24 @@
     
     <div class="vModal vModal--calendar_periods_stub" id="vModal--calendar_periods_stub">
     	<div class="vModal-userFormWrapper">
-	        <div class="vModal-userFormWrapper__header">
+	        <div class="vModal-userFormWrapper__header vModal-userFormWrapper__header-calendar_periods_stub">
 	            <img loading="lazy" src="/templates/newvodovoz/assets/img/logo-line.png" alt="Весёлый Водовоз"><h3>Доставка: 14 октября</h3>
-	            <p>Выберите время доставки</p>
+	            <p>Точные интервалы доставки недоступны по техническим причинам :( </br>
+                    Выберете желаемое время, менеджер свяжется с Вами для подтверждения заказа</p>
 	        </div>
 	        <div class="vModal-userFormWrapper__body">
-	        	<div class="cart-checkout-datetime__time-inner">
-	        		
+	        	<div class="cart-checkout-datetime__time-inner cart-checkout-datetime__time-inner-calendar_periods_stub">
 	        		<input type="hidden" name="time_id" value="">
 	        		<label><input class="js-pure" type="radio" name="time" value="18-23" data-period="18-23" data-id="97" data-required="true"><span>Утро</span></label>
 	        		<label><input class="js-pure" type="radio" name="time" value="18-21" data-period="18-21" data-id="95" data-required="true"><span>День</span></label>
 	        		<label><input class="js-pure" type="radio" name="time" value="21-23" data-period="21-23" data-id="105" data-required="true"><span>Вечер</span></label>
 	    		</div>
 	        </div>
+            <div class="vModal-userFormWrapper__button">
+                <button class="transition-btn">
+                      Далее
+                </button>
+            </div>
 	        <div class="loadingWrap"><div class="loading-dots">
 	            <div class="loading-dots--dot"></div>
 	            <div class="loading-dots--dot"></div>

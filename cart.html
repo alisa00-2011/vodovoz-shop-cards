@@ -524,14 +524,14 @@
     	
     <div class="vModal vModal--calendar_periods" id="vModal--calendar_periods">
     	<div class="vModal-userFormWrapper">
-	        <div class="vModal-userFormWrapper__header">
+	        <div class="vModal-userFormWrapper__header vModal-userFormWrapper__header-calendar_periods">
 	            <img loading="lazy" src="/templates/newvodovoz/assets/img/logo-line.png" alt="Весёлый Водовоз"><h3>Доставка: 14 октября</h3>
 	            <p>Выберите время доставки</p>
 	        </div>
 	        <div class="vModal-userFormWrapper__body">
 	        	<div class="cart-checkout-datetime__time-inner cart-checkout-datetime__time-inner-calendar_periods">
-	        		<div class="express_delivery_wrap express_delivery_wrap-cards" data-mark_date="no">
-	        			<label class="express_delivery_input express_delivery_input-cards">
+	        		<div class="express_delivery_wrap" data-mark_date="no">
+	        			<label class="express_delivery_input">
 	        				<input class="js-pure express_delivery" type="radio" name="time" value="express доставка" data-required="true"  />
 	        				<span>Доставка в течение часа</span>
 	    				</label>
@@ -541,15 +541,10 @@
 					</div>
 	        		
 	        		<input type="hidden" name="time_id" value="">
-                    <div class="time-inner__row">
-                        <label><input class="js-pure" type="radio" name="time" value="18-23" data-period="18-23" data-id="97" data-required="true"><span>18-23</span></label>
-                        <label><input class="js-pure" type="radio" name="time" value="18-21" data-period="18-21" data-id="95" data-required="true"><span>18-21</span></label>
-                    </div>
-                    <div class="time-inner__row">
-                        <label><input class="js-pure" type="radio" name="time" value="21-23" data-period="21-23" data-id="105" data-required="true"><span>21-23</span></label>
+	        		<label><input class="js-pure" type="radio" name="time" value="18-23" data-period="18-23" data-id="97" data-required="true"><span>18-23</span></label>
+	        		<label><input class="js-pure" type="radio" name="time" value="18-21" data-period="18-21" data-id="95" data-required="true"><span>18-21</span></label>
+	        		<label><input class="js-pure" type="radio" name="time" value="21-23" data-period="21-23" data-id="105" data-required="true"><span>21-23</span></label>
 	        		<label><input class="js-pure" type="radio" name="time" value="22-23:59" data-period="22-23:59" data-id="600" data-required="true"><span>22-23:59</span></label>
-                    </div>
-	        		
 	    		</div>
 	        </div>
             <div class="vModal-userFormWrapper__button">

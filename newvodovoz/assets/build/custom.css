@@ -3200,10 +3200,12 @@ numpages white bg
 .vModal-userFormWrapper__header p{
   padding-bottom: 15px;
 }
+.vModal-userFormWrapper__header-calendar_periods p,.vModal-userFormWrapper__header-calendar_periods_stub p{
+  margin: 0!important;
+}
 
 .vModal-userFormWrapper__header-calendar_periods_stub p{
   padding: 0;
-  margin: 0!important;
 }
 
 .vModal-userFormWrapper__body{
@@ -3230,11 +3232,17 @@ numpages white bg
   width: 37.56px!important;
 }
 
-.cart-checkout-datetime__time-inner-calendar_periods,.express_delivery_wrap-cards{
+.cart-checkout-datetime__time-inner-calendar_periods, .cart-checkout-datetime__time-inner-calendar_periods .express_delivery_wrap{
   margin: 0!important;
 }
+.cart-checkout-datetime__time-inner-calendar_periods{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 
-.express_delivery_input-cards{
+.cart-checkout-datetime__time-inner-calendar_periods .express_delivery_input{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3242,7 +3250,7 @@ numpages white bg
   height: 29px!important;
 }
 
-.cart-checkout-datetime__time-inner-calendar_periods label.express_delivery_input-cards>input~span, 
+.cart-checkout-datetime__time-inner-calendar_periods label>input~span, 
 .time-inner__row label>input~span,
 .cart-checkout-datetime__time-inner-calendar_periods_stub label>input~span{
   font-size: 16px;
@@ -3256,27 +3264,19 @@ numpages white bg
   align-items: center;
 }
 
-.cart-checkout-datetime__time-inner-calendar_periods label.express_delivery_input-cards>input~span{
+.cart-checkout-datetime__time-inner-calendar_periods label.express_delivery_input>input~span{
   padding:0!important;
   width: 100%!important;
   height: 100%!important;
 }
 
-.time-inner__row{
-  display: flex;
-  width: 100%;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.time-inner__row label{
-  margin: 0!important;
-  width: 100%;
+.cart-checkout-datetime__time-inner-calendar_periods label{
+  width: 48%;
   height: 29px;
+  margin: 10px 0 0 0!important;
 }
 
-.time-inner__row label>input~span{
+.cart-checkout-datetime__time-inner-calendar_periods label>input~span{
   width: 100%;
 }
 

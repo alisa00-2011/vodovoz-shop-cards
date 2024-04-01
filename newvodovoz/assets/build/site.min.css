@@ -15498,6 +15498,7 @@ label.cart-control_lg.cart-control_right-pos > input ~ span {
     }
 }
 
+/* Изменения от 01.04.24*/
 .cart-table__notice-not-available{
     background-color: #F3F4F8;
     border-radius: 16px;
